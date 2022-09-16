@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+		<meta charset = "utf-8" />
+		<title> Mi peso en el Sistema Solar </title>
+		<link rel="stylesheet" href="./sistemaSolar.css">
+		<script src="./js/sistemaSolar.js"> </script>
+	</head>
+
+	<body>
+		<h1> Descubre tu peso en el sistema solar </h1>
+
+		<section id = "encabezado">
+			<div>
+				<p>
+					<img src="./imgs/humano.png" alt="humano" id="humano">
+				</p>
+			</div>
+			<div>
+				<p> ¿Cuál es tu peso en la tierra? 
+					<input type="number" name="Peso" id="pesoEnTierra">
+				</p>
+			</div>
+			<div>
+				<p>
+					<img src="./imgs/tierra.jpg" alt = "tierra" id="tierra1">
+				</p>
+			</div>
+		</section>
+
+		<div class="boton-de-reinicio">
+			<p> 
+				<button id="boton-reiniciar">Reiniciar</button>
+			</p>
+		</div>
+
+		<section class = "todos-los-planetas">
+			<div class = "planetas-1">   
+				<input type="radio" name="planets" id="op-jupiter">
+				<label id="lb-jupiter" for="op-jupiter"> 
+					<p>Júpiter<span id="txt-jupiter"></span></p>
+					<img class = "jupiter" src="./imgs/jupiter.jpg" alt="Jupiter"> 
+				</label>
+
+				<input type="radio" name="planets" id="op-saturno">
+				<label id="lb-saturno" for="op-saturno">
+					<p>Saturno<span id="txt-saturno"></span></p>
+					<img class = "saturno" src="./imgs/saturno.jpg" alt="Saturno"> 
+				</label>
+			</div>
+
+			<div class = "planetas-2">
+				<input type="radio" name="planets" id="op-marte">
+				<label id="lb-marte" for="op-marte">
+					<p>Marte<span id="txt-marte"></span></p>
+					<img class = "marte" src="./imgs/marte.jpg" alt="Marte"> 
+				</label>
+
+				<p>
+					<img id = "sol" src="./imgs/sol.jpg" alt="Sol">
+				</p>
+
+				<input type="radio" name="planets" id="op-urano">
+				<label id="lb-urano" for="op-urano">
+					<p>Urano<span id="txt-urano"></span></p>
+					<img class = "urano" src="./imgs/urano.jpg" alt="Urano"> 	
+				</label>
+			</div>
+
+			<div class = "planetas-3">
+				<input type="radio" name="planets" id="op-tierra">
+				<label id="lb-tierra" for="op-tierra"> 
+					<p>La Tierra<span id="txt-tierra"></span></p>
+					<img class = "la-tierra" src="./imgs/tierra.jpg" alt="La Tierra">
+				</label>
+
+				<input type="radio" name="planets" id="op-neptuno">
+				<label id="lb-neptuno" for="op-neptuno"> 
+					<p>Neptuno<span id="txt-neptuno"></span></p>
+					<img class = "neptuno" src="./imgs/neptuno.jpg" alt="Neptuno"> 
+				</label>
+			</div>
+				
+			<div class = "planetas-4">
+				<input type="radio" name="planets" id="op-venus">
+				<label id="lb-venus" for="op-venus"> 
+					<p>Venus<span id="txt-venus"></span></p>
+					<img class = "venus" src="./imgs/venus.jpg" alt="Venus"> 
+				</label>
+				
+				<input type="radio" name="planets" id="op-mercurio">
+				<label id="lb-mercurio" for="op-mercurio">
+					<p>Mercurio<span id="txt-mercurio"></span></p>
+					<img class = "mercurio" src="./imgs/mercurio.jpg" alt="Mercurio"> 
+				</label>
+			
+				<input type="radio" name="planets" id="op-pluton">
+				<label id="lb-pluton" for="op-pluton">
+					<p>Plutón<span id="txt-pluton"></span></p>
+					<img class = "pluton" src="./imgs/pluton.jpg" alt="Plutón">
+				</label>
+			</div>
+	</section>
+		
+	<div class="boton-de-reinicio">
+		<p> 
+			<button id="boton-reiniciar2">Reiniciar</button>
+		</p>
+	</div>
+
+	</body>
+
+</html>

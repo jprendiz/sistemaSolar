@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: #E7F6F2;
+}
+
+h1 {
+    color: #E7F6F2;
+    text-align: center;
+}
+
+#encabezado {
+    display: flex;
+    color: #E7F6F2;
+    justify-content: center;
+    align-items: center;
+}
+
+#humano{
+    width: 130px;
+}
+
+#pesoEnTierra{
+    display: inline-block;
+}
+
+#tierra1{
+    width: 140px;
+}
+
+.boton-de-reinicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar, #boton-reiniciar2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: transparent;
+    color: #E7F6F2;
+    border: 1px solid white;
+    width: 174px;
+    height: 47px;
+    border-radius: 20px;
+}
+
+#boton-reiniciar:hover, #boton-reiniciar2:hover {
+    background-color: #E2DCC8;
+    color: #0F3D3E;
+}
+
+.todos-los-planetas{
+    display: flex;
+    flex-direction: column;
+}
+
+.planetas-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.planetas-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.planetas-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.planetas-4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.saturno{
+    width: 400px;
+}
+
+.jupiter{
+    width: 250px;
+}
+
+#lb-jupiter{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+#lb-jupiter :hover {
+    color: #0F3D3E;
+}
+
+#lb-saturno{
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+#lb-saturno :hover {
+    color: #0F3D3E;
+}
+
+#lb-marte{
+    display: block;
+    width: 125px;
+    height: 160px;
+}
+
+#lb-marte :hover {
+    color: #0F3D3E;
+}
+
+.urano {
+    width: 160px;
+}
+
+#lb-urano{
+    display: block;
+    width: 150px;
+}
+
+#lb-urano :hover {
+    color: #0F3D3E;
+}
+
+.la-tierra{
+    width: 180px;
+}
+
+#lb-tierra{
+    width: 180px;
+}
+
+#lb-tierra :hover {
+    color: #0F3D3E;
+}
+
+.neptuno{
+    width: 200px;
+}    
+
+#lb-neptuno {
+    display: block;
+    width: 200px;
+    height: 250px;
+}
+#lb-neptuno :hover {
+    color: #0F3D3E;
+}
+
+#lb-venus {
+    width: 80px;
+}
+
+#lb-venus :hover {
+    color: #0F3D3E;
+}
+
+#lb-mercurio {
+    width: 70px;
+    height: 200px;
+}
+#lb-mercurio :hover {
+    color: #0F3D3E;
+}
+
+#lb-pluton {
+    width: 80px;
+}
+
+#lb-pluton :hover {
+    color: #0F3D3E;
+}
+.pluton{
+    width: 50px;
+}  
+
+input {
+    display: none;
+}
+
+@media (max-width: 360px) {
+    .todos-los-planetas, .planetas-1, .planetas-2, .planetas-3, .planetas-4 {
+        flex-direction: column;
+    }
+}
