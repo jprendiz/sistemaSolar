@@ -18,12 +18,27 @@ h1 {
     align-items: center;
 }
 
+#astronauta {
+    display: flex;
+    align-items: center;
+}
+
 #humano{
     width: 130px;
+    margin-right: 12px;
 }
 
 #pesoEnTierra{
     display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    background: black;
+    color: #E7F6F2;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 8px;
 }
 
 #tierra1{
@@ -97,7 +112,7 @@ h1 {
     height: 300px;
 }
 
-#lb-jupiter :hover {
+#lb-jupiter :hover, #lb-saturno :hover, #lb-marte :hover {
     color: #0F3D3E;
 }
 
@@ -107,18 +122,10 @@ h1 {
     height: 300px;
 }
 
-#lb-saturno :hover {
-    color: #0F3D3E;
-}
-
 #lb-marte{
     display: block;
     width: 125px;
     height: 160px;
-}
-
-#lb-marte :hover {
-    color: #0F3D3E;
 }
 
 .urano {
@@ -130,7 +137,7 @@ h1 {
     width: 150px;
 }
 
-#lb-urano :hover {
+#lb-urano :hover, #lb-tierra :hover, #lb-neptuno :hover {
     color: #0F3D3E;
 }
 
@@ -142,10 +149,6 @@ h1 {
     width: 180px;
 }
 
-#lb-tierra :hover {
-    color: #0F3D3E;
-}
-
 .neptuno{
     width: 200px;
 }    
@@ -155,15 +158,12 @@ h1 {
     width: 200px;
     height: 250px;
 }
-#lb-neptuno :hover {
-    color: #0F3D3E;
-}
 
 #lb-venus {
     width: 80px;
 }
 
-#lb-venus :hover {
+#lb-venus :hover, #lb-mercurio :hover, #lb-pluton :hover {
     color: #0F3D3E;
 }
 
@@ -171,17 +171,11 @@ h1 {
     width: 70px;
     height: 200px;
 }
-#lb-mercurio :hover {
-    color: #0F3D3E;
-}
 
 #lb-pluton {
     width: 80px;
 }
 
-#lb-pluton :hover {
-    color: #0F3D3E;
-}
 .pluton{
     width: 50px;
 }  
@@ -190,8 +184,23 @@ input {
     display: none;
 }
 
+#autor {
+    text-align: center;
+    font-size: x-small;
+    color: gray;
+}
+
 @media (max-width: 360px) {
+    #astronauta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #tierra1 {
+        display: none;
+    }
     .todos-los-planetas, .planetas-1, .planetas-2, .planetas-3, .planetas-4 {
         flex-direction: column;
+        align-items: center;
     }
 }

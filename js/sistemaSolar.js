@@ -18,6 +18,9 @@ function calcularPesos()
 {
     peso = document.getElementById('pesoEnTierra').value;
     
+    if (peso <= 0) {
+        return
+    }
 
     if(document.getElementById('op-jupiter').checked)
     {
@@ -104,37 +107,40 @@ function calcularPesos()
 function iniciar() 
 {
     let botonReiniciar = document.getElementById('boton-reiniciar')
-    botonReiniciar.addEventListener('click', reiniciarApp)
-
     let botonReiniciar2 = document.getElementById('boton-reiniciar2')
-    botonReiniciar2.addEventListener('click', reiniciarApp)
-
     let lbMercurio = document.getElementById('lb-mercurio')
-    lbMercurio.addEventListener('click', calcularPesos)
-
     let lbVenus = document.getElementById('lb-venus')
-    lbVenus.addEventListener('click', calcularPesos)
-
     let lbTierra = document.getElementById('lb-tierra')
-    lbTierra.addEventListener('click', calcularPesos)
-
     let lbMarte = document.getElementById('lb-marte')
-    lbMarte.addEventListener('click', calcularPesos)
-
     let lbJupiter = document.getElementById('lb-jupiter')
-    lbJupiter.addEventListener('click', calcularPesos)
-
     let lbSaturno = document.getElementById('lb-saturno')
-    lbSaturno.addEventListener('click', calcularPesos)
-
     let lbUrano = document.getElementById('lb-urano')
-    lbUrano.addEventListener('click', calcularPesos)
-
     let lbNeptuno = document.getElementById('lb-neptuno')
-    lbNeptuno.addEventListener('click', calcularPesos)
-
     let lbPluton = document.getElementById('lb-pluton')
+    
+    botonReiniciar.addEventListener('click', reiniciarApp)
+    botonReiniciar2.addEventListener('click', reiniciarApp)
+    lbMercurio.addEventListener('click', calcularPesos)
+    lbVenus.addEventListener('click', calcularPesos)
+    lbTierra.addEventListener('click', calcularPesos)
+    lbMarte.addEventListener('click', calcularPesos)
+    lbJupiter.addEventListener('click', calcularPesos)
+    lbSaturno.addEventListener('click', calcularPesos)
+    lbUrano.addEventListener('click', calcularPesos)
+    lbNeptuno.addEventListener('click', calcularPesos)
     lbPluton.addEventListener('click', calcularPesos)
+
+    botonReiniciar.addEventListener('ontouchstart', reiniciarApp)
+    botonReiniciar2.addEventListener('ontouchstart', reiniciarApp)
+    lbMercurio.addEventListener('ontouchstart', calcularPesos)
+    lbVenus.addEventListener('ontouchstart', calcularPesos)
+    lbTierra.addEventListener('ontouchstart', calcularPesos)
+    lbMarte.addEventListener('ontouchstart', calcularPesos)
+    lbJupiter.addEventListener('ontouchstart', calcularPesos)
+    lbSaturno.addEventListener('ontouchstart', calcularPesos)
+    lbUrano.addEventListener('ontouchstart', calcularPesos)
+    lbNeptuno.addEventListener('ontouchstart', calcularPesos)
+    lbPluton.addEventListener('ontouchstart', calcularPesos)
     
 }
 
